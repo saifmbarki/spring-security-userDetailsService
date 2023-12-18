@@ -11,7 +11,14 @@ public class HomeController {
 
     @GetMapping("/")
     public String index() {
-        return "This is the index page";
+        return "Cette petite application GUI gère l'authentification "
+        		+ "des utilisateurs en utilisant les technologies Spring Boot, "
+        		+ "Spring Security et UserDetailsService. En naviguant vers la page d'accueil ('/'),"
+        		+ " vous pouvez accéder à une page non sécurisée. Pour accéder à la page '/secured', "
+        		+ "une simple authentification est nécessaire, "
+        		+ "permettant ainsi de restreindre l'accès à des utilisateurs authentifiés."
+        		+ " De plus, la page '/admin' exige un rôle d'administrateur pour y accéder,"
+        		+ " démontrant ainsi la gestion fine des autorisations grâce à Spring Security.";
     }
 
     @GetMapping("/secured")

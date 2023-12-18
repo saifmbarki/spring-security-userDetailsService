@@ -1,6 +1,6 @@
 # Application d'Authentification avec Spring Boot et Spring Security
 
-Cette petite application GUI a été créée pour gérer l'authentification des utilisateurs en utilisant les frameworks Spring Boot, Spring Security et UserDetailsService. Voici un aperçu des fonctionnalités :
+Cette petite application a été créée par [saifmbarki](https://github.com/saifmbarki/] pour gérer l'authentification des utilisateurs en utilisant les frameworks Spring Boot, Spring Security et UserDetailsService. Voici un aperçu des fonctionnalités :
 
 - **Page d'Accueil ('/') :** Vous pouvez librement naviguer sur cette page, car elle n'est pas sécurisée.
 

@@ -19,7 +19,7 @@ public class UserDetailsServiceImpl implements UserDetailsService{
 		AppUser user = appUserService.loadAppUserByUsername(username);
 		if(user == null) throw new UsernameNotFoundException("not found");
 		
-		//@SuppressWarnings("deprecation")
+
 		UserDetails userDetails = User
 				.withUsername(user.getUsername())
 				.password(user.getPassword())

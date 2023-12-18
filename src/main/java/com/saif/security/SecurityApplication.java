@@ -40,7 +40,16 @@ public class SecurityApplication implements CommandLineRunner{
 				.role("user")
 				.build();
 		appUserRepo.save(user);
-		System.out.println("ajout User");
+		
+		AppUser user2 = AppUser.builder()
+				.username("ghaithmbk")
+				.password(passwordEncoder.encode("mbk"))
+				.role("admin")
+				.build();
+		appUserRepo.save(user2);
+		
+		
+		System.out.println("ajout User 1 et 2");
 		
 		/****/
 
